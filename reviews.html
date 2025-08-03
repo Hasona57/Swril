@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews - Hassan's Gaming Corner</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Hassan's Gaming World</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Game Reviews</a>
+            <a href="tips.html">Gaming Tips</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h2>My Game Reviews</h2>
+            <p>Here's what I think about some games I played. I just rate them on how much I liked them and if they're worth playing.</p>
+        </section>
+
+        <section class="reviews">
+            <div class="review-card">
+                <h3>Cyberpunk 2077</h3>
+                <div class="rating">Rating: 7/10</div>
+                <p class="para1">Finally played this game after hearing it got better. The story is pretty good and the city looks cool. Graphics are really nice on my PC.</p>
+                <p class="para2">Combat is fun but gets boring after a while. I like the hacking stuff and all the different upgrades you can get.</p>
+                <p class="para3">It's a decent game now that they fixed most bugs. Worth playing if you like sci-fi games but still has some glitches.</p>
+            </div>
+
+            <div class="review-card">
+                <h3>Elden Ring</h3>
+                <div class="rating">Rating: 9/10</div>
+                <p class="para1">This game is really hard but amazing. I died so many times but kept playing because the world is beautiful. There's always something cool to find.</p>
+                <p class="para2">Boss fights are crazy hard. Some took me hours but winning feels so good. Combat is smooth once you learn it.</p>
+                <p class="para3">If you played Dark Souls you'll love this. If not, expect to die a lot but don't quit! It's worth it when you finally beat a boss.</p>
+            </div>
+
+            <div class="review-card">
+                <h3>Among Us</h3>
+                <div class="rating">Rating: 8/10</div>
+                <p class="para1">This game was huge during covid and I can see why. It's simple but really fun with friends. Every game is different.</p>
+                <p class="para2">Being the impostor is scary but fun. You have to lie and sabotage stuff. Being crew is cool too trying to figure out who's lying.</p>
+                <p class="para3">Best with voice chat and friends. Playing with randoms online is weird sometimes. But with good people it's really funny.</p>
+            </div>
+        </section>
+
+        <section class="bookmark-section" id="upcoming">
+            <h3>Games I Want to Review Next</h3>
+            <ul>
+                <li>Baldur's Gate 3 - heard it's amazing</li>
+                <li>Spider-Man 2 - love superhero games</li>
+                <li>Hogwarts Legacy - finally got it on sale</li>
+                <li>Tears of the Kingdom - still working through it</li>
+            </ul>
+            <p><a href="#upcoming">Bookmark this section</a> to check back for new reviews!</p>
+        </section>
+
+        <section class="interactive-section">
+            <h3>Rate My Reviews</h3>
+            <p>Did you find my reviews helpful?</p>
+            <button onclick="rateReview('helpful')">Helpful!</button>
+            <button onclick="rateReview('okay')">Okay</button>
+            <button onclick="rateReview('not helpful')">Not Helpful</button>
+            <p id="rating-result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:hmmmma78@gmail.com">hmmmma78@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/Hasona57">Hasona57</a></p>
+                <p>Discord: hasona57_05092</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <p><a href="https://store.steampowered.com/">Steam Store</a></p>
+                <p><a href="https://www.twitch.tv/">Twitch</a></p>
+                <p><a href="https://www.youtube.com/gaming">YouTube Gaming</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Hassan's Gaming Website 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        function rateReview(rating) {
+            const messages = {
+                'helpful': 'Thanks! Glad my reviews helped you!',
+                'okay': 'Thanks for the feedback, I\'ll try to improve!',
+                'not helpful': 'Sorry about that, I\'ll work on making better reviews!'
+            };
+            document.getElementById('rating-result').textContent = messages[rating];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan's Gaming Corner</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Hassan's Gaming World</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Game Reviews</a>
+            <a href="tips.html">Gaming Tips</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome Gamers!</h2>
+            <p>Hey! I'm Hassan and I love gaming. I made this website to talk about games I play and share some tips. I'm in high school and gaming is my main hobby.</p>
+            <div class="game-image"></div>
+        </section>
+
+        <div class="content">
+            <h3>What I'm Playing Right Now</h3>
+            
+            <div class="game-card red">
+                <h4>Minecraft</h4>
+                <p>Been working on this huge castle in survival for weeks. It has secret rooms and a moat and I even made a redstone elevator! Minecraft is the best because you can build anything.</p>
+            </div>
+
+            <div class="game-card blue">
+                <h4>Valorant</h4>
+                <p>Just got to Silver rank last week! My aim is getting better and I'm learning the agents. I main Sage but trying to learn Jett. Comp matches are crazy intense.</p>
+            </div>
+
+            <div class="game-card green">
+                <h4>Stardew Valley</h4>
+                <p>This game is so chill after school stress. I'm in year 3 and married Abigail. My crops are doing good and I got to level 80 in the mines finally!</p>
+            </div>
+
+            <h3>Gaming Setup</h3>
+            <p>Here's what I use for gaming:</p>
+            <ul class="setup-list">
+                <li>Custom built PC with RTX 3060</li>
+                <li>144Hz monitor (makes everything smooth)</li>
+                <li>Mechanical keyboard with blue switches</li>
+                <li>Gaming mouse with RGB lights</li>
+                <li>Decent headset for voice chat</li>
+            </ul>
+
+            <div class="fun-section">
+                <h3>Gaming Stats</h3>
+                <button onclick="showStat()">Click for Random Gaming Fact!</button>
+                <p id="stat-display">Click the button above!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:hmmmma78@gmail.com">hmmmma78@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/Hasona57">Hasona57</a></p>
+                <p>Discord: hasona57_05092</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <p><a href="https://store.steampowered.com/">Steam Store</a></p>
+                <p><a href="https://www.twitch.tv/">Twitch</a></p>
+                <p><a href="https://www.youtube.com/gaming">YouTube Gaming</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Hassan's Gaming Website 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        function showStat() {
+            const facts = [
+                "I have like 500+ hours in Minecraft lol",
+                "Got a 12 kill streak in Valorant once!",
+                "I have 47 games on Steam but only play 5",
+                "Pizza rolls are the best gaming snack ever",
+                "Been gaming since I was 8 years old"
+            ];
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('stat-display').textContent = randomFact;
+        }
+    </script>
+</body>
+</html>
